@@ -1,0 +1,10 @@
+package com.entidades;
+
+import javax.persistence.Embeddable;
+
+@Embeddable
+public class AficionDeportivaPK {
+
+	
+	
+}

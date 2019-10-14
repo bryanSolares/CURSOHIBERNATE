@@ -1,0 +1,18 @@
+package com.entidades;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "EMP_EMPRESA")
+public class Empresa {
+
+	@Column(name = "EMP_ID_FISCAL", length = 40)
+	private String idFiscal;
+	@Column(name = "EMP_NOMBRECOMERCIAL", length = 40)
+	private String nombreComercial;
+	@Column(name = "EMP_RAZONSOCIAL", length = 40)
+	private String razonSocial;
+	
+}

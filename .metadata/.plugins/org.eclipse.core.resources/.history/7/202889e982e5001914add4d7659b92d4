@@ -1,0 +1,9 @@
+package com.entidades;
+
+public class LugarEstacionamiento {
+
+	private int numLugar;
+	private String edificio;
+	private String piso;
+	
+}

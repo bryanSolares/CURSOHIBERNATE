@@ -1,0 +1,12 @@
+package com.entidades;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "DIR_DIRECCION")
+public class Direccion {
+
+	private int idDireccion;
+	
+}

@@ -1,0 +1,14 @@
+package com.entidades;
+
+public class NombreCompleto {
+
+	private String nombre;
+	private String otrosNombres;
+	private String apPaterno;
+	private String apMaterno;
+	
+	public NombreCompleto() {
+	}
+	
+	
+}

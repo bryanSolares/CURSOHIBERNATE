@@ -1,0 +1,19 @@
+package com.entidades;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "MAS_MASCOTA")
+public class Mascota {
+	
+	@Id
+	@Column(name = "")
+	private int numMascota;
+	private String nombre;
+	private TipoMascota tipo;
+	
+
+}

@@ -1,0 +1,9 @@
+package com.entidades;
+
+public class AficionDeportiva {
+
+	private int nivelPreferencia;
+	private String posicionReferencia;
+	private String mayorLogro;
+	
+}

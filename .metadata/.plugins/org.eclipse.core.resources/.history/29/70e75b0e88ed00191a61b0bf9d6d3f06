@@ -1,0 +1,20 @@
+package com.entidades;
+
+import javax.persistence.Column;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "AFD_DEPORTIVA")
+public class AficionDeportiva {
+
+	@Column(name = "AFD_NIVEL_PREFERENCIA")
+	private int nivelPreferencia;
+	@Column(name = "AFD_POS_REFERENCIA", length = 40)
+	private String posicionReferencia;
+	@Column(name = "AFD_MAYORLOGRO" , length = 60)
+	private String mayorLogro;
+	
+	public AficionDeportiva() {
+	}
+	
+}

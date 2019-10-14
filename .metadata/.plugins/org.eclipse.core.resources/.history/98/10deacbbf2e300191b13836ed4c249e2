@@ -1,0 +1,11 @@
+package com.entidades.test;
+
+public class TestPersonaInsercion {
+
+	public static void main(String[] args) {
+
+		
+		
+	}
+
+}

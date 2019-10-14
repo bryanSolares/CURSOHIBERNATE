@@ -1,0 +1,19 @@
+package com.entidades;
+
+import java.time.LocalDate;
+
+public class Persona {
+
+	private int idPersonas;
+	private String nombre;
+	private String direccion;
+	private LocalDate fechaNacimiento;
+
+	public Persona(int idPersonas, String nombre, String direccion, LocalDate fechaNacimiento) {
+		this.idPersonas = idPersonas;
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.fechaNacimiento = fechaNacimiento;
+	}
+
+}

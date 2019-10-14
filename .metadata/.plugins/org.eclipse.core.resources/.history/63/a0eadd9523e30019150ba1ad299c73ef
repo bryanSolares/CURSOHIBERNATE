@@ -1,0 +1,16 @@
+package com.entidades.test;
+
+import com.entidades.Persona;
+
+public class TestPersona {
+
+	
+	
+	public static void main (String [] args) {
+
+		GestorPersistencia persistencia = new GestorPersistencia();
+		Persona persona = persistencia.
+	
+	}
+	
+}

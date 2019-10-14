@@ -1,0 +1,16 @@
+package com.entidades.test;
+
+import com.entidades.Persona;
+import com.persistencia.GestorPersistencia;
+
+public class TestPersonaActualizacion {
+
+	public static void main(String[] args) {
+		GestorPersistencia persistencia = new GestorPersistencia();
+		System.out.println(persistencia.getPersonaPorId(1));
+		
+		System.out.println(persistencia.getPersonaPorId(1));
+
+	}
+
+}

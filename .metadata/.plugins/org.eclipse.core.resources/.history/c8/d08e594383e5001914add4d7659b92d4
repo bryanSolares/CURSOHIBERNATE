@@ -1,0 +1,24 @@
+package com.entidades;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "EST_ESTACIONAMIENTO")
+public class LugarEstacionamiento {
+
+	@Id
+	@Column(name = "EST_NUMLUGAR")
+	private int numLugar;
+	@Column(name = "EST_EDIFICIO")
+	private String edificio;
+	@Column()
+	private String piso;
+	@Column()
+	private String coordenadas;
+	
+	
+	
+}

@@ -1,0 +1,15 @@
+package com.entidades;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "MAS_MASCOTA")
+public class Mascota {
+	
+	private int numMascota;
+	private String nombre;
+	private TipoMascota tipo;
+	
+
+}

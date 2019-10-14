@@ -1,0 +1,14 @@
+package com.entidades;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "EM_EMPRESA")
+public class Empresa {
+
+	private String idFiscal;
+	private String nombreComercial;
+	private String razonSocial;
+	
+}

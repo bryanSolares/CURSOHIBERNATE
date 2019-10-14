@@ -1,0 +1,71 @@
+package com.entidades;
+
+import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "AFD_DEPORTIVA")
+public class AficionDeportiva {
+
+	@EmbeddedId
+	private AficionDeportivaPK llave;
+	@Column(name = "AFD_NIVEL_PREFERENCIA")
+	private int nivelPreferencia;
+	@Column(name = "AFD_POS_REFERENCIA", length = 40)
+	private String posicionReferencia;
+	@Column(name = "AFD_MAYORLOGRO", length = 60)
+	private String mayorLogro;
+
+	public AficionDeportiva() {
+	}
+
+	public AficionDeportiva(AficionDeportivaPK llave, int nivelPreferencia, String posicionReferencia,
+			String mayorLogro) {
+		super();
+		this.llave = llave;
+		this.nivelPreferencia = nivelPreferencia;
+		this.posicionReferencia = posicionReferencia;
+		this.mayorLogro = mayorLogro;
+	}
+
+	public AficionDeportivaPK getLlave() {
+		return llave;
+	}
+
+	public void setLlave(AficionDeportivaPK llave) {
+		this.llave = llave;
+	}
+
+	public int getNivelPreferencia() {
+		return nivelPreferencia;
+	}
+
+	public void setNivelPreferencia(int nivelPreferencia) {
+		this.nivelPreferencia = nivelPreferencia;
+	}
+
+	public String getPosicionReferencia() {
+		return posicionReferencia;
+	}
+
+	public void setPosicionReferencia(String posicionReferencia) {
+		this.posicionReferencia = posicionReferencia;
+	}
+
+	public String getMayorLogro() {
+		return mayorLogro;
+	}
+
+	public void setMayorLogro(String mayorLogro) {
+		this.mayorLogro = mayorLogro;
+	}
+
+	@Override
+	public String toString() {
+		return "AficionDeportiva [llave=" + llave + ", nivelPreferencia=" + nivelPreferencia + ", posicionReferencia="
+				+ posicionReferencia + ", mayorLogro=" + mayorLogro + "]";
+	}
+
+}

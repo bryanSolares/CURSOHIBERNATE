@@ -1,0 +1,18 @@
+package com.entidades.test;
+
+import java.util.Date;
+
+import com.entidades.Persona;
+import com.persistencia.GestorPersistencia;
+
+public class TestPersonaInsercion {
+
+	public static void main(String[] args) {
+
+		GestorPersistencia persistencia = new GestorPersistencia();
+		
+		Persona persona = new Persona(1, "Bryan Josue Solares", "Ciudad de Guatemala", new Date());
+		
+	}
+
+}

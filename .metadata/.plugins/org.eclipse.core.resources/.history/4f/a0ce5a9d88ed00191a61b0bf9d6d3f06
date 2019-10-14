@@ -1,0 +1,14 @@
+package com.entidades;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class Deporte {
+
+	private String cveDeporte;
+	private String nombre;
+	private String descripcion;
+	
+}

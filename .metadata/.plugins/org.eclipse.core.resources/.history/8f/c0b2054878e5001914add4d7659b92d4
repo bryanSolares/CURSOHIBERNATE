@@ -1,0 +1,34 @@
+package com.entidades;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "DIR_DIRECCION")
+public class Direccion {
+
+	@Id
+	@Column (name = "DIR_ID")
+	private int idDireccion;
+	@Column (name = "DIR_CALLE", length = 50, nullable = false)
+	private String calle;
+	@Column (name = "DIR_NUMEXTERIOR", length = 20, nullable = false)
+	private String numExterior;
+	@Column (name = "DIR_NUMINTERIOR", length = 20, nullable = false)
+	private String numInterior;
+	@Column (name = "DIR_COLONIA", length = 50, nullable = false)
+	private String colonia;
+	public Direccion(int idDireccion, String calle, String numExterior, String numInterior, String colonia) {
+		this.idDireccion = idDireccion;
+		this.calle = calle;
+		this.numExterior = numExterior;
+		this.numInterior = numInterior;
+		this.colonia = colonia;
+	}
+	
+	public Direccion() {
+	}
+	
+}

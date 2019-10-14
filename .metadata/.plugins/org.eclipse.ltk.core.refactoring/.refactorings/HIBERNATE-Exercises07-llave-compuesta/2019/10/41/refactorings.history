@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestPersonaConsulta.java&apos; to &apos;HIBERNATE-Exercises-llave-compuesta/src/test/java/com.entidades.test&apos;&#x0D;&#x0A;- Original project: &apos;HIBERNATE-Exercises-llave-compuesta&apos;&#x0D;&#x0A;- Destination element: &apos;HIBERNATE-Exercises-llave-compuesta/src/test/java/com.entidades.test&apos;&#x0D;&#x0A;- Original element: &apos;com.entidades.test.TestPersonaConsulta.java&apos;" description="Copy compilation unit" destination="/src\/test\/java&lt;com.entidades.test" element1="/src\/test\/java&lt;com.entidades.test{TestPersonaConsulta.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1570948775942" units="1" version="1.0"/>
+</session>

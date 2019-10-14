@@ -1,0 +1,21 @@
+package com.entidades;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table
+public class LugarEstacionamiento {
+
+	@Id
+	@Column
+	private int numLugar;
+	private String edificio;
+	private String piso;
+	private String coordenadas;
+	
+	
+	
+}

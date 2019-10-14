@@ -1,0 +1,14 @@
+package com.entidades.test;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class TestPersona {
+	
+	public static void main (String [] args) {
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("miBaseDeDatos");
+
+	
+	}
+	
+}

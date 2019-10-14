@@ -1,0 +1,24 @@
+package com.entidades;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "MAS_MASCOTA")
+public class Mascota {
+	
+	@Id
+	@Column(name = "MAS_ID")
+	private int numMascota;
+	@Column(name = "MAS_NOMBRE", length = 20, nullable = false)
+	private String nombre;
+	@Column(name = "MAS_TIPO", length = 15, nullable = false)
+	@Enumerated(EnumType.STRING)
+	private TipoMascota tipo;
+	private Persona persona;
+
+}

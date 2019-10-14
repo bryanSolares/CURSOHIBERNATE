@@ -1,0 +1,22 @@
+package com.persistencia;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import com.entidades.Persona;
+
+public class GestorPersistencia {
+
+	private EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("miBaseDeDatos");
+	
+	private Persona getPersonaPorId(Long id) {
+		EntityManager manager = fabrica.createEntityManager();
+		Persona persona = (Persona)manager.find(Persona.class, id);
+		return persona;
+		
+	}
+	
+	
+	
+}

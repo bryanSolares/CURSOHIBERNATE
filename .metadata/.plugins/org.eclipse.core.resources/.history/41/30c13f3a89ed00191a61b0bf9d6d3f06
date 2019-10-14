@@ -1,0 +1,16 @@
+package com.entidades;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+
+@Embeddable
+public class AficionDeportivaPK {
+
+	@Column(name = "ADF_PER_ID")
+	private int idPersonaPK;
+	@Column(name = "ADF_DEP_CV")
+	private String cveDeportePK;
+	@Column(name = "ADF_NUMAFI")
+	private int numAficion;
+	
+}
